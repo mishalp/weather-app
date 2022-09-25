@@ -1,5 +1,5 @@
 
-export const getWeather = async(name)=>{
+export const getWeather = (name)=>{
     
     return new Promise(async(resolve, reject)=>{
         const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${name}&APPID=49c97a8d5dbf4ef3902633dd36885717`,{mode: 'cors'});
