@@ -2,7 +2,7 @@
 export const getWeather = async(name)=>{
     
     return new Promise(async(resolve, reject)=>{
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${name}&APPID=49c97a8d5dbf4ef3902633dd36885717`);
+        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${name}&APPID=49c97a8d5dbf4ef3902633dd36885717`,{mode: 'cors'});
         const data = await response.json();
         if(data.cod == '404'){
             reject(data.message)
