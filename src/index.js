@@ -3,7 +3,6 @@ import { populateData } from "./dom"
 
 
 getWeather('new york').then((data)=>{ 
-    console.log(data);
     populateData(data);
 })
 
