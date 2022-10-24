@@ -32,6 +32,14 @@ export const populateData = (data)=>{
            body.style.backgroundImage = "url('./images/snow.jpg')"
            break;
 
+        case 'Mist':
+            body.style.backgroundImage = "url('./images/mist.jpg')"
+            break;
+
+        case 'Fog':
+            body.style.backgroundImage = "url('./images/fog.png')"
+            break;
+
         default:
             break;
     }
